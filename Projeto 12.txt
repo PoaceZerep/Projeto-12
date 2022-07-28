@@ -1,0 +1,21 @@
+
+controle = False
+
+while (controle) == False:
+
+   print('Insira o ano de nascimento: ')
+   
+   try:
+
+        anonascimento = int(input())
+        
+        if anonascimento >= 1922 or anonascimento < 2022:
+         controle = True
+         nome = input('Informe o nome completo:') 
+    
+        else:
+            controle = False
+            print('digite um ano válido entre 1922 e 2021 :')
+    
+    except:
+        print('Caractere inválido')
